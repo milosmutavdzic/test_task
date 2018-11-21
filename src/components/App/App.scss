@@ -1,0 +1,33 @@
+.app {
+    font-family: Arial, Helvetica, sans-serif;
+    .load-more-button-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .load-more-button {
+        padding: .5rem 1.5rem;
+        margin: .5rem auto;
+        
+        border: 2px solid #2C6D9E;
+        background: transparent;
+        
+        cursor: pointer;
+        
+        color: #2C6D9E;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+        
+        transition: opacity 0.3s linear;
+        
+        &:focus {
+            outline: none;
+        }
+        
+        &:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+    }
+}
